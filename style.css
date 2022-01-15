@@ -116,3 +116,78 @@ section.mediaLogoSection {
     grid-column-gap: 95px;
     align-items: center;
 }
+
+h1.popularCollectionTitle {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #3a3a3a;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+section.popularCollection {
+    width: 1200px;
+    margin: auto;
+}
+
+.popularCollectionContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.singlePopularCollectionBox {border: 1px solid #dddddda8;padding: 16px;border-radius: 5px;box-shadow: 0px 0px 26px 6px #ddddddb5;}
+
+.popularCollectionImage {
+    width: 354px;
+}
+
+.popularCollectionImage img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.popularCollectionInfo h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3a3a3a;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+
+.popularCollectionInfo h3 {font-size: 28px;font-weight: 400;margin-top: -18px;margin-bottom: 12px;}
+
+.popularCollectionIcon i {color: #fb8200;font-size: 12px;}
+
+.popularCollectionIcon span {
+    margin-left: 8px;
+    color: #7e8285;
+    font-weight: 600;
+}
+
+.popularCollectionInfo p {
+    color: #787885;
+    font-weight: 600;
+    line-height: 8px;
+}
+
+.secendImage:hover {
+    transform: scale(1.5);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+a#seeMoreBtn {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    color: #e02c6d;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+a#seeMoreBtn i {font-size: 20px;margin-left: 8px;}
