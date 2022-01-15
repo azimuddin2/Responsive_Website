@@ -241,3 +241,41 @@ a#joinBtn {
     font-weight: 600;
     border-radius: 5px;
 }
+
+footer.footerBar {
+    background-color: #0a0826;
+    color: #ffffff;
+    margin-top: 80px;
+}
+
+.footerBarContainer {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.footerBarContainer h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.footerBarContainer p {
+    color: #d9dbe1;
+    font-weight: 500;
+    margin: 6px;
+}
+
+.footerBarIcon {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.footerBarIcon i {
+    width: 44px;
+    height: 30px;
+    /* border: 1px solid #fff; */
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background-color: #22203b;
+    padding-top: 10px;
+}
