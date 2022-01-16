@@ -138,7 +138,12 @@ section.popularCollection {
     grid-row-gap: 30px;
 }
 
-.singlePopularCollectionBox {border: 1px solid #dddddda8;padding: 16px;border-radius: 5px;box-shadow: 0px 0px 26px 6px #ddddddb5;}
+.singlePopularCollectionBox {
+    border: 1px solid #dddddda8;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 26px 6px #ddddddb5;
+}
 
 .popularCollectionImage {
     width: 354px;
@@ -157,9 +162,17 @@ section.popularCollection {
     margin-top: 8px;
 }
 
-.popularCollectionInfo h3 {font-size: 28px;font-weight: 400;margin-top: -18px;margin-bottom: 12px;}
+.popularCollectionInfo h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: -18px;
+    margin-bottom: 12px;
+}
 
-.popularCollectionIcon i {color: #fb8200;font-size: 12px;}
+.popularCollectionIcon i {
+    color: #fb8200;
+    font-size: 12px;
+}
 
 .popularCollectionIcon span {
     margin-left: 8px;
@@ -190,7 +203,10 @@ a#seeMoreBtn {
     font-size: 18px;
 }
 
-a#seeMoreBtn i {font-size: 20px;margin-left: 8px;}
+a#seeMoreBtn i {
+    font-size: 20px;
+    margin-left: 8px;
+}
 
 section.productInformation {
     width: 1200px;
@@ -287,9 +303,26 @@ footer.footerBar {
     transition: 0.3s;
 }
 
-
 footer.footerBar{
     width: 100%;
+}
+
+a#preebookBtn:hover {
+    background-color: #3a3a3a;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+a#joinBtn:hover {
+    background-color: #3a3a3a;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+a#seeMoreBtn:hover {
+    color: #3a3a3a;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 /* --------------------
@@ -367,5 +400,76 @@ footer.footerBar{
        }
         
     }
-/* END */
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
     
+    section.homeSlider{
+        width: 100%;
+        height: 100%;
+    }
+
+    .homeSliderContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .secendImage{
+        width: 360px;
+    }
+
+    .firstImage{
+        width: 360px;
+    }
+
+    .homeSliderTitle{
+    text-align: center;
+    position: relative;
+    top: 300px;
+    }
+
+    .homeSliderImage{
+    position: relative;
+    bottom: 326px;
+    }
+
+    h1.productTitle{
+        text-align: center;
+    }
+
+    section.popularCollection{
+        width: 100%;
+    }
+
+    .popularCollectionContainer{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .singlePopularCollectionBox{
+        flex-direction: column;
+    }
+
+    section.productInformation{
+        width: 100%;
+    }
+
+    .productInformationContainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 509px;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .productInfoImage{
+        width: 100%;
+    }
+
+    .productInfo{
+        text-align: center;
+    }
+
+    footer.footerBar{
+       width: 100%;
+   }
+    
+}
