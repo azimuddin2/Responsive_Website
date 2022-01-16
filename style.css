@@ -10,7 +10,7 @@ body {
 section.homeSlider {
     width: 1200px;
     margin: auto;
-    height: 520px;
+    height: 650px;
     background-color: #ffffff;
 }
 
@@ -52,7 +52,7 @@ section.homeSlider {
 }
 
 h1.productTitle {
-    margin-top: 70px;
+    margin-top: 80px;
     font-size: 24px;
     color: #3a3a3a;
     margin-bottom: 60px;
@@ -69,7 +69,7 @@ h1.productTitle {
     font-weight: 600;
     font-size: 15px;
     color: #3a3a3a;
-    width: 475px;
+    /* width: 475px; */
     margin-bottom: 40px;
 }
 
@@ -286,3 +286,83 @@ footer.footerBar {
     cursor: pointer;
     transition: 0.3s;
 }
+
+/* --------------------
+    Media Queries 
+---------------------*/
+/* Mobile Devices */
+    @media only screen and (max-width:688px) {
+
+        section.homeSlider{
+            width: 100%;
+            height: 100%;
+        }
+
+        .homeSliderContainer{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .secendImage{
+            width: 300px;
+        }
+
+        .firstImage{
+            width: 300px;
+        }
+
+        .homeSliderTitle{
+        text-align: center;
+        position: relative;
+        top: 260px;
+        }
+
+        .homeSliderImage{
+        position: relative;
+        bottom: 444px;
+        }
+
+        h1.productTitle{
+            text-align: center;
+        }
+
+        section.popularCollection{
+            width: 100%;
+        }
+
+        .popularCollectionContainer{
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+
+        .singlePopularCollectionBox{
+            flex-direction: column;
+        }
+
+        section.productInformation{
+            width: 100%;
+        }
+
+        .productInformationContainer{
+            grid-template-columns: repeat(1, 1fr);
+            width: 350px;
+            align-items: center;
+            margin: auto;
+        }
+        
+        .productInfoImage{
+            width: 100%;
+        }
+
+        .productInfo{
+            text-align: center;
+        }
+
+    
+
+       footer.footerBar{
+           width: 100%;
+       }
+        
+    }
+
+    
