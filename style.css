@@ -287,6 +287,11 @@ footer.footerBar {
     transition: 0.3s;
 }
 
+
+footer.footerBar{
+    width: 100%;
+}
+
 /* --------------------
     Media Queries 
 ---------------------*/
@@ -362,5 +367,5 @@ footer.footerBar {
        }
         
     }
-
+/* END */
     
